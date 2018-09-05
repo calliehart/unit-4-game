@@ -1,0 +1,102 @@
+body {
+    background-image: url("../../PowerPuffBackground-01.jpg");
+    background-size: 100%;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-family: 'Baloo Paaji', cursive;
+    text-align: center;
+    font-size: 24px;
+}
+
+header { 
+    text-align: center;
+    padding: 10px;
+    
+}
+
+header img {
+    width: 300px;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+.btn-danger {
+    background-color: #f471b4;
+}
+
+.btn-warning {
+    color: #fff;
+}
+
+#bullet {
+    width: 150px;
+    border: solid 3px #f471b4;
+    padding: 10px;
+    margin: 15px;
+    visibility: visible;
+}
+
+#charPool, #chosenChar, #enemiesPool, #enemyChar, #enemiesDefeated, #playByPlay {
+    text-align: center;
+}
+
+#chosenChar {
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+
+#enemyChar {
+    width: 50%;
+    height: 300px;
+    float: right;
+
+}
+
+#enemiesPool, #fightSection, #enemiesDefeated {
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+#fightSection {
+    text-align: center;
+}
+
+#him {
+    width: 150px;
+    border: solid 3px #f471b4;
+    padding: 10px;
+    margin: 15px;
+    visibility: visible;
+}
+
+#mojojojo {
+    width: 150px;
+    border: solid 3px #f471b4;
+    padding: 10px;
+    margin: 15px;
+    visibility: visible;
+}
+
+#powerpuff98 {
+    width: 150px;
+    border: solid 3px #f471b4;
+    padding: 10px;
+    margin: 15px;
+    visibility: visible;
+}
+
+
+
+
+

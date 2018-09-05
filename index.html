@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PowerPuff RPG</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/images/logo.png" alt="PowerPuff Girls Logo">
+        <h1 id="instructions"></h1>
+    </header>
+    <div id="charPool"></div>
+    <img src='assets/images/Powerpuff98.png' alt='PowerPuff Girls' id='powerpuff98' class='btn'>
+    <img src='assets/images/Bullet.png' alt='Bullet the Squirrel' id='bullet' class='btn'>
+    <img src='assets/images/mojojojo.png' alt='Villan MoJo JoJo' id='mojojojo' class='btn'>
+    <img src='assets/images/him.png' alt='Villan Him' id='him' class='btn'>
+    <div id="chosenChar">
+        <h2>Your Character</h2>
+        <p id="healthScoreChar"></p>
+    </div>
+
+    <div id="enemyChar">
+        <h2>Opponent</h2>
+        <p id="healthScoreDef"></p>
+    </div>
+    <div id="enemiesPool">
+        <h2>Enemies Available to Attack</h2>
+       
+    </div>
+    <div id="fightSection">
+        <div class="btn btn-danger" id="attackBTN">Attack</div>
+        <div class="btn btn-warning" id="resetBTN">Start Over</div>
+    </div>
+    <div id="enemiesDefeated">
+            <h2>Defeated</h2>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+    
+</body>
+</html>
