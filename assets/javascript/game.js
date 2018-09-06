@@ -35,6 +35,7 @@ $(document).ready(function(){
     var yourChar = null;
     var defenderChar = null;
     var defenderID = null;
+    var yourCharID = null;
     var gameOver = false;
     var winCounter = 0;
 
@@ -53,11 +54,15 @@ function reset() {
         yourChar = null;
     }
     
+    $(defenderID).toggleClass("chosenBorder");
+    $(yourCharID).toggleClass("chosenBorder");
     defenderChar = null;
     defenderID = null;
     winCounter = 0;
     gameOver = false;
     healthReset();
+    
+    
 
 };//ends reset()
 
@@ -74,13 +79,15 @@ $("#powerpuff98").click(function() {
 
     if (yourChar === null) {
         yourChar = powerpuff;
+        yourCharID = "#powerpuff98";
         $("#powerpuff98").appendTo("#chosenChar");
         $("#bullet").appendTo("#enemiesPool");
         $("#mojojojo").appendTo("#enemiesPool");
         $("#him").appendTo("#enemiesPool");
         $("#instructions").empty();
         $("#instructions").append("Now Choose Your Opponent");
-        $("#healthScoreChar").html("Health: " + yourChar.health); 
+        $("#healthScoreChar").html("Health: " + yourChar.health);
+        $("#powerpuff98").toggleClass("chosenBorder");
        
 
     } else if (defenderChar === null && yourChar !== powerpuff) {
@@ -90,6 +97,7 @@ $("#powerpuff98").click(function() {
        $("#instructions").append("Let The Fight Begin!!");
        $("#powerpuff98").appendTo("#enemyChar");
        $("#healthScoreDef").html("Health: " + defenderChar.health);
+       $("#powerpuff98").toggleClass("chosenBorder");
     }
 
 });//ends #powerpuff98 click function
@@ -98,13 +106,15 @@ $("#bullet").click(function() {
 
     if (yourChar === null) {
         yourChar = bullet;
+        yourCharID = "#bullet";
         $("#bullet").appendTo("#chosenChar");
         $("#powerpuff98").appendTo("#enemiesPool");
         $("#mojojojo").appendTo("#enemiesPool");
         $("#him").appendTo("#enemiesPool");
         $("#instructions").empty();
         $("#instructions").append("Now Choose Your Opponent");
-        $("#healthScoreChar").html("Health: " + yourChar.health); 
+        $("#healthScoreChar").html("Health: " + yourChar.health);
+        $("#bullet").toggleClass("chosenBorder"); 
        
     } else if (defenderChar === null && yourChar !== bullet) {
         defenderChar = bullet;
@@ -113,6 +123,7 @@ $("#bullet").click(function() {
         $("#instructions").append("Let The Fight Begin!!");
         $("#bullet").appendTo("#enemyChar");
         $("#healthScoreDef").html("Health: " + defenderChar.health);
+        $("#bullet").toggleClass("chosenBorder");
     } 
     
 });//ends #bullet click function
@@ -121,7 +132,7 @@ $("#mojojojo").click(function() {
 
     if (yourChar === null) {
         yourChar = mojojojo;
-        
+        yourCharID = "#mojojojo";
         $("#mojojojo").appendTo("#chosenChar");
         $("#powerpuff98").appendTo("#enemiesPool");
         $("#bullet").appendTo("#enemiesPool");
@@ -129,6 +140,7 @@ $("#mojojojo").click(function() {
         $("#instructions").empty();
         $("#instructions").append("Now Choose Your Opponent");
         $("#healthScoreChar").html("Health: " + yourChar.health); 
+        $("#mojojojo").toggleClass("chosenBorder");
         
     } else if (defenderChar === null && yourChar !== mojojojo) {
         defenderChar = mojojojo;
@@ -137,6 +149,7 @@ $("#mojojojo").click(function() {
         $("#instructions").append("Let The Fight Begin!!");
         $("#mojojojo").appendTo("#enemyChar");
         $("#healthScoreDef").html("Health: " + defenderChar.health);
+        $("#mojojojo").toggleClass("chosenBorder");
     } 
     
 });//ends #mojojojo click function
@@ -145,14 +158,15 @@ $("#him").click(function() {
 
     if (yourChar === null) {
         yourChar = him;
-        
+        yourCharID = "#him";
         $("#him").appendTo("#chosenChar");
         $("#powerpuff98").appendTo("#enemiesPool");
         $("#mojojojo").appendTo("#enemiesPool");
         $("#bullet").appendTo("#enemiesPool");
         $("#instructions").empty();
         $("#instructions").append("Now Choose Your Opponent");
-        $("#healthScoreChar").html("Health: " + yourChar.health); 
+        $("#healthScoreChar").html("Health: " + yourChar.health);
+        $("#him").toggleClass("chosenBorder"); 
         
     } else if (defenderChar === null && yourChar !== him) {
         defenderChar = him;
@@ -160,7 +174,8 @@ $("#him").click(function() {
         $("#instructions").empty();
         $("#instructions").append("Let The Fight Begin!!");
         $("#him").appendTo("#enemyChar");
-        $("#healthScoreDef").html("Health: " + defenderChar.health); 
+        $("#healthScoreDef").html("Health: " + defenderChar.health);
+        $("#him").toggleClass("chosenBorder"); 
     } 
     
 });//ends #him click function
@@ -194,6 +209,7 @@ $("#attackBTN").click(function() {
                 $("#instructions").append("You Won This Round. Choose Next Opponent.");
                 defenderChar = null;
                 $(defenderID).appendTo("#enemiesDefeated");
+                $(defenderID).toggleClass("chosenBorder");
                 defenderID = null;
             }
     

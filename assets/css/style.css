@@ -30,15 +30,34 @@ p {
 
 .btn-danger {
     background-color: #f471b4;
+    border: #f471b4;
+}
+
+.btn-danger:hover {
+    background: #ef3f99;
 }
 
 .btn-warning {
     color: #fff;
+    background: #e4db36;
+    border: #e4db36;
+}
+
+.btn-warning:hover {
+    background: #d6cc07;
+    color: #fff;
+}
+
+.generalBorder {
+    border: solid 3px #f471b4;
+}
+
+.chosenBorder {
+    border: solid 3px #e4db36;
 }
 
 #bullet {
     width: 150px;
-    border: solid 3px #f471b4;
     padding: 10px;
     margin: 15px;
     visibility: visible;
@@ -74,7 +93,6 @@ p {
 
 #him {
     width: 150px;
-    border: solid 3px #f471b4;
     padding: 10px;
     margin: 15px;
     visibility: visible;
@@ -82,7 +100,6 @@ p {
 
 #mojojojo {
     width: 150px;
-    border: solid 3px #f471b4;
     padding: 10px;
     margin: 15px;
     visibility: visible;
@@ -90,7 +107,6 @@ p {
 
 #powerpuff98 {
     width: 150px;
-    border: solid 3px #f471b4;
     padding: 10px;
     margin: 15px;
     visibility: visible;
