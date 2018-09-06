@@ -52,16 +52,18 @@ function reset() {
     if (yourChar !== null) {
         yourChar.currentAttack = yourChar.baseAttack;
         yourChar = null;
+        
     }
     
     $(defenderID).toggleClass("chosenBorder");
     $(yourCharID).toggleClass("chosenBorder");
     defenderChar = null;
     defenderID = null;
+    yourCharID = null;
     winCounter = 0;
     gameOver = false;
     healthReset();
-    
+
     
 
 };//ends reset()
