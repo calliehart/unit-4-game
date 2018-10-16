@@ -2,7 +2,7 @@
 
 ## Decription
 
-This is a simple browser game designed to challenge the user to figure out what order of defeating opponent characters is necessary to win the game. 
+This is a simple browser game.
 
 This particular game is themed around the Powerpuff Girls. 
 
@@ -12,6 +12,13 @@ Users will:
 * Use the Attack Button until someone wins
 * If user wins, the oponent moves to the 'Defeated' area and the user will need to select the next oponent
 * This continues for 3 rounds or until the user loses
+
+## Problem:
+Create a game that challenges the user to figure out what order of defeating opponent characters is necessary to win the game. 
+
+## Solution: 
+
+
 
 ### Image Credits
 
